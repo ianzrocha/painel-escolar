@@ -1,7 +1,6 @@
 [build]
-builder = "nixpacks"
+builder = "RAILPACK"
 
 [deploy]
-startCommand = "npm run build && npm run preview"
-restartPolicyType = "always"
-restartPolicyMaxRetries = 0
+startCommand = "node .output/server/index.mjs"
+restartPolicyType = "ALWAYS"
