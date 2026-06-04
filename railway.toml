@@ -4,3 +4,6 @@ builder = "RAILPACK"
 [deploy]
 startCommand = "node dist/server/index.mjs"
 restartPolicyType = "ALWAYS"
+
+[deploy.environmentVariables]
+PORT = "3000"
