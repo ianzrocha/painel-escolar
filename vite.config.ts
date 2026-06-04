@@ -12,5 +12,5 @@ export default defineConfig({
     // nitro/vite builds from this
     server: { entry: "server" },
   },
-  nitro: true, // Force enable Nitro for Railway deployment (no Lovable context detected)
+  nitro: { preset: "node-server" },
 });
