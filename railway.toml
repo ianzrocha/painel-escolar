@@ -2,5 +2,5 @@
 builder = "RAILPACK"
 
 [deploy]
-startCommand = "node .output/server/index.mjs"
+startCommand = "node dist/server/index.mjs"
 restartPolicyType = "ALWAYS"
